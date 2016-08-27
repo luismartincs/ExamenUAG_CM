@@ -7,7 +7,7 @@
 //
 
 #import "Home.h"
-#import "Weather.h"
+#import "WeatherController.h"
 
 @interface Home ()
 
@@ -44,7 +44,7 @@
 - (void)mapView:(GMSMapView *)mapView didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     NSLog(@"You tapped at %f,%f", coordinate.latitude, coordinate.longitude);
     
-    NSString *datos = [NSString stringWithFormat:@"Lat: %f, Lon: %f ",coordinate.latitude,coordinate.longitude];
+    NSString *datos = [NSString stringWithFormat:@"Lat: %.6f, Lon: %.6f ",coordinate.latitude,coordinate.longitude];
     
     _marker.position = coordinate;
     _marker.title = @"Ubicación";
@@ -53,7 +53,8 @@
 }
 
 - (void)mapView:(GMSMapView *)mapView didTapInfoWindowOfMarker:(GMSMarker *)marker {
-    NSLog(@"YOLO");
+    
+    _selectedCoord = marker.position;
     
     [self performSegueWithIdentifier:@"Temp" sender:self];
 }
@@ -61,15 +62,12 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    if([segue.destinationViewController isKindOfClass:[Weather class]]){
+    if([segue.destinationViewController isKindOfClass:[WeatherController class]]){
         
-        Weather *destination = [segue destinationViewController];
+        WeatherController *destination = [segue destinationViewController];
         
-        /*
-        destination.destinationTitle = [_towns objectForKey:_key][_index];
-        destination.destinationDescription = [_townsDesc objectForKey:_key][_index];
-        destination.destinationPhoto = [_townsImgs objectForKey:_key][_index];
-        destination.city = _key;*/
+        destination.latitude = [NSString stringWithFormat:@"%f",_selectedCoord.latitude];
+        destination.longitude = [NSString stringWithFormat:@"%f",_selectedCoord.longitude];
         
     }
 }

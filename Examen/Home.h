@@ -16,5 +16,7 @@
 @property(nonatomic,strong) GMSMapView *mapView;
 @property(nonatomic,strong) GMSMarker *marker;
 
+@property(nonatomic) CLLocationCoordinate2D selectedCoord;
+
 @end
 
