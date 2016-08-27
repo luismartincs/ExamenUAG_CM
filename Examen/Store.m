@@ -6,13 +6,13 @@
 //  Copyright © 2016 Luis de Jesus Martin Castillo. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "Store.h"
 
-@interface SecondViewController ()
+@interface Store ()
 
 @end
 
-@implementation SecondViewController
+@implementation Store
 
 - (void)viewDidLoad {
     [super viewDidLoad];

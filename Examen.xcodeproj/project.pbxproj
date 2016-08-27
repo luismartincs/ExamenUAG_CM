@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		A01C9EDD1D715179002A35BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C9EDC1D715179002A35BF /* main.m */; };
 		A01C9EE01D715179002A35BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C9EDF1D715179002A35BF /* AppDelegate.m */; };
-		A01C9EE31D715179002A35BF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C9EE21D715179002A35BF /* FirstViewController.m */; };
-		A01C9EE61D715179002A35BF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C9EE51D715179002A35BF /* SecondViewController.m */; };
+		A01C9EE31D715179002A35BF /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C9EE21D715179002A35BF /* Home.m */; };
+		A01C9EE61D715179002A35BF /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = A01C9EE51D715179002A35BF /* Store.m */; };
 		A01C9EE91D715179002A35BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01C9EE71D715179002A35BF /* Main.storyboard */; };
 		A01C9EEB1D715179002A35BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01C9EEA1D715179002A35BF /* Assets.xcassets */; };
 		A01C9EEE1D715179002A35BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01C9EEC1D715179002A35BF /* LaunchScreen.storyboard */; };
+		A01C9EF81D7153A3002A35BF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A01C9EF71D7153A3002A35BF /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +22,15 @@
 		A01C9EDC1D715179002A35BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A01C9EDE1D715179002A35BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A01C9EDF1D715179002A35BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A01C9EE11D715179002A35BF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		A01C9EE21D715179002A35BF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		A01C9EE41D715179002A35BF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		A01C9EE51D715179002A35BF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A01C9EE11D715179002A35BF /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		A01C9EE21D715179002A35BF /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		A01C9EE41D715179002A35BF /* Store.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		A01C9EE51D715179002A35BF /* Store.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 		A01C9EE81D715179002A35BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A01C9EEA1D715179002A35BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A01C9EED1D715179002A35BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A01C9EEF1D715179002A35BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01C9EF71D7153A3002A35BF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +63,13 @@
 		A01C9EDA1D715179002A35BF /* Examen */ = {
 			isa = PBXGroup;
 			children = (
-				A01C9EDE1D715179002A35BF /* AppDelegate.h */,
-				A01C9EDF1D715179002A35BF /* AppDelegate.m */,
-				A01C9EE11D715179002A35BF /* FirstViewController.h */,
-				A01C9EE21D715179002A35BF /* FirstViewController.m */,
-				A01C9EE41D715179002A35BF /* SecondViewController.h */,
-				A01C9EE51D715179002A35BF /* SecondViewController.m */,
+				A01C9EF51D71520D002A35BF /* Main */,
+				A01C9EF61D715216002A35BF /* Controllers */,
 				A01C9EE71D715179002A35BF /* Main.storyboard */,
 				A01C9EEA1D715179002A35BF /* Assets.xcassets */,
 				A01C9EEC1D715179002A35BF /* LaunchScreen.storyboard */,
 				A01C9EEF1D715179002A35BF /* Info.plist */,
+				A01C9EF71D7153A3002A35BF /* Podfile */,
 				A01C9EDB1D715179002A35BF /* Supporting Files */,
 			);
 			path = Examen;
@@ -82,6 +81,26 @@
 				A01C9EDC1D715179002A35BF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A01C9EF51D71520D002A35BF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A01C9EDE1D715179002A35BF /* AppDelegate.h */,
+				A01C9EDF1D715179002A35BF /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		A01C9EF61D715216002A35BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A01C9EE11D715179002A35BF /* Home.h */,
+				A01C9EE21D715179002A35BF /* Home.m */,
+				A01C9EE41D715179002A35BF /* Store.h */,
+				A01C9EE51D715179002A35BF /* Store.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +134,7 @@
 				TargetAttributes = {
 					A01C9ED71D715178002A35BF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = G4BTYN7N43;
 					};
 				};
 			};
@@ -143,6 +163,7 @@
 			files = (
 				A01C9EEE1D715179002A35BF /* LaunchScreen.storyboard in Resources */,
 				A01C9EEB1D715179002A35BF /* Assets.xcassets in Resources */,
+				A01C9EF81D7153A3002A35BF /* Podfile in Resources */,
 				A01C9EE91D715179002A35BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,9 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A01C9EE61D715179002A35BF /* SecondViewController.m in Sources */,
+				A01C9EE61D715179002A35BF /* Store.m in Sources */,
 				A01C9EE01D715179002A35BF /* AppDelegate.m in Sources */,
-				A01C9EE31D715179002A35BF /* FirstViewController.m in Sources */,
+				A01C9EE31D715179002A35BF /* Home.m in Sources */,
 				A01C9EDD1D715179002A35BF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,10 +290,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Examen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ljmc.examen.Examen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljmc.examen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -280,10 +304,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Examen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ljmc.examen.Examen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljmc.examen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

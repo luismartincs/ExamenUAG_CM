@@ -6,13 +6,13 @@
 //  Copyright © 2016 Luis de Jesus Martin Castillo. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "Home.h"
 
-@interface FirstViewController ()
+@interface Home ()
 
 @end
 
-@implementation FirstViewController
+@implementation Home
 
 - (void)viewDidLoad {
     [super viewDidLoad];
