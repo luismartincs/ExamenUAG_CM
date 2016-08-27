@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleMaps/GoogleMaps.h>
 
-@interface Home : UIViewController
+@import GoogleMaps;
 
+@interface Home : UIViewController<GMSMapViewDelegate>
+
+@property(nonatomic,strong) GMSMapView *mapView;
+@property(nonatomic,strong) GMSMarker *marker;
 
 @end
 
