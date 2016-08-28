@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PayPalMobile.h"
 
 @import GoogleMaps;
 
@@ -20,6 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [GMSServices provideAPIKey:@"AIzaSyDnPa7o8INQWBhWyiwa1WJLheFnr__4wwU"];
+    
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"AVL0Gzt8qPoE6k033S8zXt5E8LGxZRvvlsRsrYYH6BIKcWX7E04rh-dmH1m5QvbxmTh9O9QFiOt9s7ys",PayPalEnvironmentSandbox : @"AcxKzwMH2J9ttwZhbclK5fb7-jC74WWkfoVEsHTaOpJi7cPP7JqfR6G-RMs1ncRDg039jcgfI2jVu7lo"}];
     
     return YES;
 }

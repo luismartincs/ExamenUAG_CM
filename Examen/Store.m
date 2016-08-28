@@ -121,6 +121,7 @@
         
         pagar.imagePath = _images[_index];
         pagar.price = [_prices[_index] integerValue];
+        pagar.name = _items[_index];
         
     }
 }

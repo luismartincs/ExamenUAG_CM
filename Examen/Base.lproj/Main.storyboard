@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Clima-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="Home" sceneMemberID="viewController">
@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Clima" image="umbrella-7.png" id="acW-dT-cKf"/>
                     <connections>
                         <segue destination="coO-GA-wuu" kind="modal" identifier="Temp" id="M81-Vh-ke6"/>
                     </connections>
@@ -121,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="836" y="-339"/>
         </scene>
-        <!--Store-->
+        <!--Tienda-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="Store" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Tienda" image="shopping-cart-7.png" id="cPa-gy-q4n"/>
                     <connections>
                         <segue destination="BPk-8x-CkY" kind="modal" identifier="Pago" id="0dO-12-ZRu"/>
                     </connections>
@@ -220,5 +220,7 @@
     </scenes>
     <resources>
         <image name="Boton.png" width="200" height="100"/>
+        <image name="shopping-cart-7.png" width="30" height="30"/>
+        <image name="umbrella-7.png" width="29" height="30"/>
     </resources>
 </document>

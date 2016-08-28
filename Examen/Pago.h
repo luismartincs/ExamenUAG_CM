@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PayPalMobile.h"
 
-@interface Pago : UIViewController
+@interface Pago : UIViewController <PayPalPaymentDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *image;
 @property (strong,nonatomic) NSString *imagePath;
+@property (strong,nonatomic) NSString *name;
 @property (nonatomic) NSInteger price;
 
 - (IBAction)cancelar:(id)sender;

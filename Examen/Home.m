@@ -47,15 +47,20 @@
     
     NSString *datos = [NSString stringWithFormat:@"Lat: %.6f, Lon: %.6f ",coordinate.latitude,coordinate.longitude];
     
+    _marker.icon = [GMSMarker markerImageWithColor:[UIColor redColor]];
     _marker.position = coordinate;
     _marker.title = @"Ubicación";
     _marker.snippet = datos;
     _mapView.selectedMarker = _marker;
+    
+
 }
+
 
 - (void)mapView:(GMSMapView *)mapView didTapInfoWindowOfMarker:(GMSMarker *)marker {
     
     _selectedCoord = marker.position;
+    _marker.icon = [GMSMarker markerImageWithColor:[UIColor blueColor]];
     
     [self performSegueWithIdentifier:@"Temp" sender:self];
 }
