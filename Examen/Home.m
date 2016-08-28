@@ -20,7 +20,7 @@
 
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.693940
                                                             longitude:-103.417697
-                                                                 zoom:15];
+                                                                 zoom:16];
     _mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     _mapView.myLocationEnabled = YES;
     _mapView.delegate = self;
@@ -31,11 +31,12 @@
     // Creates a marker in the center of the map.
     _marker = [[GMSMarker alloc] init];
     _marker.position = CLLocationCoordinate2DMake(20.693940,-103.417697);
-    _marker.title = @"UAG";
-    _marker.snippet = @"México";
-    _marker.icon = [GMSMarker markerImageWithColor:[UIColor blueColor]];
+    _marker.title = @"Ubicación";
+    _marker.snippet = [NSString stringWithFormat:@"Lat: %.6f, Lon: %.6f ",20.693940,-103.417697];
+    //_marker.icon = [GMSMarker markerImageWithColor:[UIColor blueColor]];
     _marker.map = _mapView;
-    
+    _mapView.selectedMarker = _marker;
+
     
 }
 

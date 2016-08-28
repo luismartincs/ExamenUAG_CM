@@ -71,9 +71,9 @@
         
         _nombre.text = stName;
         _coords.text = [NSString stringWithFormat:@"(%@,%@)",_latitude,_longitude];
-        _hum.text = [NSString stringWithFormat:@"%.2f",main.humidity];
-        _tempMax.text = [NSString stringWithFormat:@"%.2f",main.temp_min];
-        _tempMin.text = [NSString stringWithFormat:@"%.2f",main.temp_max];
+        _hum.text = [NSString stringWithFormat:@"%i",(int)main.humidity];
+        _tempMax.text = [NSString stringWithFormat:@"%i ºC",(int)main.temp_max];
+        _tempMin.text = [NSString stringWithFormat:@"%i ºC",(int)main.temp_min];
         
         
         [self loadIcon];
